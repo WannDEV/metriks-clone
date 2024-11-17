@@ -44,13 +44,15 @@ const Navbar: React.FC = () => {
     return (
         <AppBar
             position="fixed"
-            className="px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-4 z-30 h-20"
+            className="px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-4 z-30"
             elevation={0}
             sx={{
                 backgroundColor: {
                     xs: theme.palette.background.paper, // Solid color on small screens
                     md: hexToRgba(
-                        theme.palette.background.default,
+                        scrollY > 0
+                            ? theme.palette.background.default
+                            : theme.palette.background.paper,
                         isBlurred ? 0.8 : 1
                     ), // Transparent and blurred on md and larger screens
                 },
