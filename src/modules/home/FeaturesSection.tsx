@@ -4,6 +4,7 @@ import SectionTag from "@/components/SectionTag";
 import { Typography } from "@mui/material";
 import features from "@/data/features";
 import Feature from "@/components/Feature";
+import DefaultGrid from "@/layouts/DefaultGrid";
 
 const FeaturesSection: React.FC = () => {
     return (
@@ -22,11 +23,11 @@ const FeaturesSection: React.FC = () => {
                     giver overblik, men også tillader dig at dykke ned i tallene
                 </Typography>
             </div>
-            <div className="grid gap-8 sm:grid-cols-[repeat(auto-fit,_minmax(15rem,_1fr))] sm:grid-rows-[repeat(2,_min-content)] xl:grid-cols-[repeat(3,_minmax(13rem,_1fr))]">
+            <DefaultGrid>
                 {features.map((feature, index) => (
                     <Feature key={index} {...feature} />
                 ))}
-            </div>
+            </DefaultGrid>
         </Section>
     );
 };

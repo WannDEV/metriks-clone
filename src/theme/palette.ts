@@ -4,9 +4,11 @@ import { red, green } from "@mui/material/colors";
 declare module "@mui/material/styles" {
     interface Palette {
         lightText: string;
+        lightGrey: string;
     }
     interface PaletteOptions {
         lightText?: string;
+        lightGrey?: string;
     }
 }
 
@@ -35,4 +37,5 @@ export const palette: PaletteOptions = {
         secondary: "#68708C", // Lighter text color
     },
     lightText: "#B9BED1",
+    lightGrey: "#9CA3BD",
 };

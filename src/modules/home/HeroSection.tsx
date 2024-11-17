@@ -1,7 +1,7 @@
 "use client";
 import React, { use } from "react";
 import { Typography, Box, useTheme } from "@mui/material";
-import LinkButton from "@components/LinkButton";
+import LinkButton from "@/components/buttons/LinkButton";
 import HeroAnimation from "@/components/HeroAnimation";
 import Section from "@/layouts/Section";
 

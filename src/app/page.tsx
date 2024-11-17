@@ -2,6 +2,8 @@ import HeroSection from "@/modules/home/HeroSection";
 import BrandsSection from "@/modules/home/BrandsSection";
 import HowItWorksSection from "@/modules/home/HowItWorksSection";
 import FeaturesSection from "@/modules/home/FeaturesSection";
+import BlogSection from "@/modules/home/BlogSection";
+import NewsletterSection from "@/modules/home/NewsletterSection";
 
 export default function Home() {
     return (
@@ -10,7 +12,8 @@ export default function Home() {
             <BrandsSection />
             <HowItWorksSection />
             <FeaturesSection />
-            <div className="h-screen bg-red-500" />
+            <BlogSection />
+            <NewsletterSection />
         </div>
     );
 }

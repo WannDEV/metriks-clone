@@ -12,7 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import NavigationLink from "./NagivationLink";
 import Logo from "./Logo";
-import LinkButton from "@components/LinkButton";
+import LinkButton from "@/components/buttons/LinkButton";
 import hexToRgba from "@utils/hexToRgba";
 import useScrollPosition from "@hooks/useScrollPosition";
 

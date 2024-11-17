@@ -49,6 +49,9 @@ export const createTypography = (
             fontSize: "2.8rem",
         },
     },
+    h6: {
+        lineHeight: 1.2,
+    },
     body1: {
         fontSize: "1.125rem",
         fontWeight: 500,

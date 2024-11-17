@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Typography } from "@mui/material";
-import LinkButton from "@/components/LinkButton";
+import LinkButton from "@/components/buttons/LinkButton";
 import Image from "next/image";
 
 type HeaderProps = {

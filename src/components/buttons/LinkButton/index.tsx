@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from "react";
 import { Button, Typography, useTheme } from "@mui/material";
 import Link from "next/link";
@@ -59,7 +60,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     href,
     expandOnHover = false,
     fillOnHover = false,
-    icon = <NorthEastIcon />,
+    icon = (<NorthEastIcon />) as ReactNode,
     showIcon = false,
     fullWidth = false,
     className,
