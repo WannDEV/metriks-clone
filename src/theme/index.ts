@@ -34,6 +34,6 @@ const themeOptions: ThemeOptions = {
 
 themeOptions.typography = createTypography(themeOptions);
 
-let theme = createTheme(themeOptions);
+const theme = createTheme(themeOptions);
 
 export default theme;

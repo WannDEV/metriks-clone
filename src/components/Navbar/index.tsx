@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
 
     return (
         <AppBar
-            position="fixed"
+            position="sticky"
             className="px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-4 z-30"
             elevation={0}
             sx={{

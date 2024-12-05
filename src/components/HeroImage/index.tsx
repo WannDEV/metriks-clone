@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Box } from "@mui/material";
-import HeroHighlightImage from "./HeroHighlightImage";
+import HeroHighlightImage from "../HeroAnimation/index";
 
 const HeroImage: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);

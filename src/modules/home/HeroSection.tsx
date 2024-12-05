@@ -1,6 +1,6 @@
 "use client";
-import React, { use } from "react";
-import { Typography, Box, useTheme } from "@mui/material";
+import React from "react";
+import { Typography, useTheme } from "@mui/material";
 import LinkButton from "@/components/buttons/LinkButton";
 import HeroAnimation from "@/components/HeroAnimation";
 import Section from "@/layouts/Section";
@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
     return (
         <Section
             id="hero"
-            customClass="pt-40 px-5 md:px-10 pb-16 md:pb-20 grid gap-5"
+            customClass="py-20 px-5 md:px-10 md:pb-20 grid gap-5"
             sx={{
                 backgroundColor: theme.palette.background.paper,
             }}

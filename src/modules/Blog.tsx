@@ -17,7 +17,6 @@ type BlogProps = {
 };
 
 const Blog: React.FC<BlogProps> = ({
-    id,
     title,
     img,
     type,

@@ -1,12 +1,13 @@
 "use client";
 import React, { ReactNode } from "react";
-import { Typography, useTheme, Box } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 
 type HeaderProps = {
+    contained?: boolean;
     children?: ReactNode;
 };
 
-const SectionTag: React.FC<HeaderProps> = ({ children }) => {
+const SectionTag: React.FC<HeaderProps> = ({ contained = true, children }) => {
     const theme = useTheme();
 
     return (
@@ -17,7 +18,7 @@ const SectionTag: React.FC<HeaderProps> = ({ children }) => {
                 fontWeight: "bold",
                 fontSize: "0.75rem",
                 display: "inline-block",
-                backgroundColor: "#f3f7fd",
+                backgroundColor: contained ? "#f3f7fd" : "none",
                 borderRadius: theme.shape.borderRadius,
                 padding: "0.5rem 0.875rem",
             }}

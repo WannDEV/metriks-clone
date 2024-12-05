@@ -17,8 +17,10 @@ export const createTypography = (
     fontFamily: beVietnamPro.style.fontFamily,
     fontSize: 16,
     h1: {
-        fontSize: "2.5rem",
-        fontWeight: 700,
+        fontSize: "3.6rem",
+        fontFamily: poppins.style.fontFamily,
+        fontWeight: 500,
+        letterSpacing: "-0.05em",
     },
     h2: {
         fontSize: "2.5rem", // Default font size
@@ -48,6 +50,11 @@ export const createTypography = (
             // sm breakpoint
             fontSize: "2.8rem",
         },
+    },
+    h5: {
+        fontWeight: 500,
+        fontFamily: poppins.style.fontFamily,
+        fontSize: "1.9rem",
     },
     h6: {
         lineHeight: 1.2,
